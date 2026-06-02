@@ -88,4 +88,8 @@ result.innerHTML = `
 }
 });
 
-
+usernameInput.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    searchBtn.click();
+  }
+});
