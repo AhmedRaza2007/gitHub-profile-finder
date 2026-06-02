@@ -1,0 +1,178 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e293b,
+    #312e81
+  );
+
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 40px 20px;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.search {
+display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+.search-box {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+input{
+  padding: 9px 46px 9px 10px;
+
+}
+button{
+  padding: 9px 30px;
+}
+.search-box input {
+  flex: 1;
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+
+  background: #ffffff1a;
+  backdrop-filter: blur(10px);
+
+  color: white;
+  font-size: 16px;
+}
+
+.search-box input::placeholder {
+  color: #cbd5e1;
+}
+
+.search-box button {
+  padding: 18px 30px;
+  border: none;
+  border-radius: 15px;
+
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #8b5cf6
+  );
+
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+
+  transition: .3s;
+}
+
+.search-box button:hover {
+  transform: translateY(-3px);
+}
+.profile-card {
+  background: #ffffff1a;
+
+  backdrop-filter: blur(20px);
+
+  border: 1px solid #ffffff1a;
+
+  border-radius: 25px;
+
+  padding: 40px;
+
+  text-align: center;
+
+  margin-bottom: 40px;
+}
+.profile-card img {
+  width: 180px;
+  height: 180px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  border: 5px solid #8b5cf6;
+
+  box-shadow:
+    0 0 30px #8b5cf6,
+    0 0 60px #8b5cf6;
+}
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.stat {
+  min-width: 130px;
+
+  background: #ffffff1a;
+
+  padding: 20px;
+
+  border-radius: 15px;
+}
+.repo-container {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 25px;
+}
+.repo {
+  background: #ffffff1a;
+
+  backdrop-filter: blur(15px);
+
+  border: 1px solid #ffffff1a;
+
+  border-radius: 20px;
+
+  padding: 25px;
+
+  transition: .3s;
+}
+
+.repo:hover {
+  transform: translateY(-8px);
+}
+.repo a {
+  text-decoration: none;
+  color: #60a5fa;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.repo-info {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 20px;
+}
+.loading,
+.error {
+  text-align: center;
+  font-size: 22px;
+  padding: 40px;
+}
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #ffffff;
+}
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
