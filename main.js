@@ -2,6 +2,7 @@
 const searchBtn = document.getElementById("searchBtn");
 const usernameInput = document.getElementById("username");
 const result = document.getElementById("result");
+
 searchBtn.addEventListener("click", async () => {
   const username = usernameInput.value.trim();
 
